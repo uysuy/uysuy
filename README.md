@@ -2,7 +2,7 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Source+Code+Pro&size=28&duration=3000&pause=1000&center=true&vCenter=true&width=600&height=45&lines=Hi+👋,+I'm+Suy;Backend+Engineer+•+Banking+%26+Fintech;Building+Payment+Systems+with+Go)](https://github.com/uysuy)
 
-<img src="https://avatars.githubusercontent.com/u/29081237?v=4" width="200" height="200" alt="@uysuy">
+<img src="[https://avatars.githubusercontent.com/u/29081237?v=4](https://media.licdn.com/dms/image/v2/D5603AQH1q2ZWWern1A/profile-displayphoto-scale_400_400/B56ZkZ74PGIAAs-/0/1757076753810?e=1784764800&v=beta&t=owPz99ca4gsKJaQJ143YUVJWCXpvtsk5mk_p9jTP8SA)" width="200" height="200" alt="@uysuy">
 
 </div>
 

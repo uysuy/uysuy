@@ -1,1 +1,31 @@
+name: GitHub Profile Summary Cards
 
+on:
+  schedule:
+    # Runs daily at 01:00 Phnom Penh time (18:00 UTC)
+    - cron: "0 18 * * *"
+  workflow_dispatch: # allows manual run from the Actions tab
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Generate profile summary cards
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          # Built-in token works for public repo stats.
+          # To include PRIVATE repo stats, create a classic PAT with `repo` + `read:user`
+          # scopes, save it as a repository secret named PAT, and change this line to:
+          # GITHUB_TOKEN: ${{ secrets.PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          BRANCH_NAME: main
+          UTC_OFFSET: 7 # Cambodia ICT (UTC+7) for the "productive time" card
